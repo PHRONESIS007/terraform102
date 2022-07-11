@@ -4,5 +4,6 @@ module "spin_up_machine" {
   modulescripts     = var.scripts
   availability_zone = var.availability_zone
   node_name         = var.node_name
+  environment = "dev"
 }
 

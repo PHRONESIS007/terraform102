@@ -7,6 +7,7 @@ resource "aws_instance" "machine" {
   availability_zone = var.availability_zone[count.index]
   tags = {
     Name = var.node_name[count.index]
+    environment = var.environment
   }
 }
 
